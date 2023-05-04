@@ -3,6 +3,7 @@
 
 def even_sum(lst):
     # Здесь нужно написать код
+	# Тестовый просмотр
     sum_list = sum(lst[0::2])
     return sum_list
 
