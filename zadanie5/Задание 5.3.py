@@ -19,6 +19,11 @@
 
 
 def everything_for_your_cat(cats_data):
+    """
+    принимает на вход список кортежей cats_data и оптимизирует их
+    :param our_str:на вход список кортежей
+    :return:на выход список оптимизированных кортежей
+    """
     temp_data = {}
     for i in cats_data:
         key = """{} {}""".format(i[-2], i[-1])

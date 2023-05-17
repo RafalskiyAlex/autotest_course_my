@@ -14,13 +14,18 @@
 
 
 def scrabble(word):
-    d = []
+    """
+    Функция , которая принимает на вход слово и высчитывает количество балов за него побуквенно, по типу Эрудит
+    :param our_str: на вход список строка - слово
+    :return: на выход - количество баллов за слово побуквенно
+    """
+    d_list = []
     all_dict = {"авеёинорст": 1, "дклмпу": 2, "бгья": 3, "йы": 4, "жзхцч": 5, "фшэю": 8, "щ": 10, "ъ": 15}
     for i in word:
         for key, value in all_dict.items():
             if i in key:
-                d.append(value)
-    points = sum(d)
+                d_list.append(value)
+    points = sum(d_list)
     return points
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
